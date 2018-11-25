@@ -59,5 +59,5 @@ def organize_schools(schools)
   schools_by_location = {}
 
     schools.collect {|key, value| schools_by_location[value[:location]] = []}
-    schools_by_location.each {|key, value| schools.each {|k1,v1| if key == v1[:location] then value << k1  end}}
+    schools_by_location.each {|key, value| schools.each {|k1,v1| if key == v1[:location] then value << k1 end}}
 end
